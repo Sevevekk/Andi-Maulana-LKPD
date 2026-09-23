@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paket Pembelajaran JavaScript - Input, Output & Aritmatika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #333;
+        }
+
+        h2, h3 {
+            color: #1a2a3a;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 5px;
+        }
+
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .activity-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e9ecef;
+        }
+
+        /* Warna teks jawaban disamakan dengan warna teks standar (hitam) */
+        .answer-text {
+            color: inherit;
+            font-weight: bold;
+        }
+
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .flow-box {
+            border: 1px solid #0056b3;
+            background-color: #e7f0fa;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            text-align: center;
+            width: 220px;
+        }
+
+        .arrow {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #666;
+            text-align: right;
+            border-top: 1px solid #ddd;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HALAMAN 4 -->
+    <h2>B. LKPD - INPUT, OUTPUT & OPERATOR</h2>
+    
+    <div class="header-info">
+        <div>
+            <p><strong>Nama:</strong> <span class="answer-text">ANDI & MAULANA</span></p>
+            <p><strong>Kelas:</strong> <span class="answer-text">X PPLG 1</span></p>
+        </div>
+        <div>
+            <p><strong>Tanggal:</strong> <span class="answer-text">23 September 2026</span></p>
+        </div>
+    </div>
+
+    <p><strong>Petunjuk</strong></p>
+    <ul>
+        <li>Kerjakan berurutan.</li>
+        <li>Jalankan setiap kode dan amati hasilnya.</li>
+        <li>Pahami fungsi setiap baris, jangan sekadar menyalin.</li>
+        <li>Jika error, baca pesan error dan cari penyebabnya.</li>
+        <li>Diskusikan bagian yang sulit dengan pasangan/kelompok.</li>
+    </ul>
+
+    <!-- Aktivitas 1 -->
+    <div class="activity-box">
+        <h3>Aktivitas 1 - Prediksi</h3>
+<pre>
+let a = 10;
+let b = 5;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+</pre>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operasi</th>
+                    <th>Prediksi</th>
+                    <th>Hasil sebenarnya</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a + b</td>
+                    <td><span class="answer-text">15</span></td>
+                    <td><span class="answer-text">15</span></td>
+                </tr>
+                <tr>
+                    <td>a - b</td>
+                    <td><span class="answer-text">5</span></td>
+                    <td><span class="answer-text">5</span></td>
+                </tr>
+                <tr>
+                    <td>a * b</td>
+                    <td><span class="answer-text">50</span></td>
+                    <td><span class="answer-text">50</span></td>
+                </tr>
+                <tr>
+                    <td>a / b</td>
+                    <td><span class="answer-text">2</span></td>
+                    <td><span class="answer-text">2</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Apakah prediksi kamu benar? <u>[X] Ya</u> &nbsp;&nbsp; [ ] Sebagian &nbsp;&nbsp; [ ] Tidak</p>
+        <p>Mengapa? <span class="answer-text">Karena perhitungan JavaScript untuk operator +, -, *, dan / mengikuti kaidah dasar aritmatika umum.</span></p>
+
+        <img src="akti 1.png" alt="hasil percobaan aktivitas 1">
+
+    </div>
+
+    <!-- Aktivitas 2 -->
+    <div class="activity-box">
+        <h3>Aktivitas 2 - Eksperimen</h3>
+<pre>
+let a = 20;
+let b = 4;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+</pre>
+        <p>Prediksi: a+b = <span class="answer-text">24</span> | a-b = <span class="answer-text">16</span> | a*b = <span class="answer-text">80</span> | a/b = <span class="answer-text">5</span> | a%b = <span class="answer-text">0</span></p>
+        <p>Apa yang kamu temukan? <span class="answer-text">Operator % (modulo) mencari sisa pembagian. Karena 20 habis dibagi 4, maka sisa pembagiannya adalah 0.</span></p>
+
+        <img src="akti 2.png" alt="hasil percobaan aktivitas 2">
+
+    </div>
+
+    <!-- Aktivitas 3 -->
+    <div class="activity-box">
+        <h3>Aktivitas 3 - Input dengan prompt()</h3>
+<pre>
+let nama = prompt("Masukkan nama:");
+console.log(nama);
+let umur = prompt("Masukkan umur:");
+console.log(umur);
+</pre>
+        <p>Apa fungsi prompt()? <span class="answer-text">Mengambil masukan/input data berupa teks dari pengguna melalui kotak dialog browser.</span></p>
+
+        <img src="akti 3.jpeg" alt="hasil percobaan aktivitas 3">
+
+    </div>
+
+    <!-- Aktivitas 4 -->
+    <div class="activity-box">
+        <h3>Aktivitas 4 - Menghitung Umur</h3>
+<pre>
+let tahunLahir = prompt("Masukkan tahun lahir:");
+let tahunSekarang = 2026;
+let umur = tahunSekarang - tahunLahir;
+console.log(umur);
+</pre>
+        <p>Uji dengan tahun lahir kamu. Umur = <span class="answer-text">18</span> tahun</p>
+
+        <img src="akti 4.jpeg" alt="hasil percobaan aktivitas 4">
+
+    </div>
+
+    <div class="footer">SMKN 1 GARUT Dasar-Dasar PPLG JavaScript — Halaman 4</div>
+    <hr>
+
+    <!-- HALAMAN 5 -->
+    <!-- Aktivitas 5 -->
+    <div class="activity-box">
+        <h3>Aktivitas 5 - Mesin Kasir Mini</h3>
+<pre>
+let harga = prompt("Masukkan harga:");
+let jumlah = prompt("Masukkan jumlah:");
+let total = harga * jumlah;
+console.log(total);
+</pre>
+        <p>Uji: Harga = 5000, Jumlah = 4 Total = Rp <span class="answer-text">20000</span></p>
+
+        <img src="akti 5.png" alt="hasil percobaan aktivitas 5">
+
+    </div>
+
+    <!-- Aktivitas 6 -->
+    <div class="activity-box">
+        <h3>Aktivitas 6 - Think Pair Share</h3>
+        <p><strong>THINK:</strong> Mengapa membutuhkan variable total? <span class="answer-text">Untuk menyimpan nilai hasil perkalian agar mudah dipanggil dan ditampilkan kembali.</span></p>
+        <p><strong>PAIR:</strong> Jawaban sama? <u>[X] Ya</u> &nbsp;&nbsp; [ ] Tidak</p>
+        <p>Jika berbeda:</p>
+        <p><strong>SHARE:</strong> Kesimpulan kelompok: <span class="answer-text">Penggunaan variabel total memperjelas alur perhitungan sebelum dicetak ke konsol.</span></p>
+    </div>
+
+    <!-- Aktivitas 7 -->
+    <div class="activity-box">
+        <h3>Aktivitas 7 - Challenge: Warung Digital</h3>
+        <p>Buat program yang meminta nama makanan, harga, dan jumlah. Tampilkan nama, harga, jumlah, dan total.</p>
+<pre>
+let makanan = prompt("Nama makanan:");
+let harga = prompt("Harga:");
+let jumlah = prompt("Jumlah:");
+let total = harga * jumlah;
+console.log(makanan);
+console.log(harga);
+console.log(jumlah);
+console.log(total);
+</pre>
+        <p>Kembangkan dengan diskon 10%:</p>
+<pre>
+let diskon = total * 10 / 100;
+let bayar = total - diskon;
+</pre>
+        <p>Tampilkan Total, Diskon, Total Bayar.</p>
+
+        <img src="akti 7.png" alt="hasil percobaan aktivitas 7">
+    </div>
+
+    <!-- Aktivitas 8 -->
+    <div class="activity-box">
+        <h3>Aktivitas 8 - Debugging</h3>
+<pre>
+let harga = 5000;
+let jumlah = 3;
+let total = harga * harga; // Salah
+console.log(total);
+</pre>
+        <p>Kesalahan: <span class="answer-text">Variabel harga dikalikan dengan variabel harga, bukan dikali dengan jumlah.</span></p>
+        <p>Perbaikan kode: <code>let total = harga * jumlah;</code></p>
+    </div>
+
+    <!-- Aktivitas 9 -->
+    <div class="activity-box">
+        <h3>Aktivitas 9 - Challenge Mandiri: Kalkulator Tabungan</h3>
+        <p>Buat program yang meminta uang awal, tabungan hari pertama, kedua, dan ketiga, lalu menghitung total.</p>
+        <p>Total tabungan = Rp <span class="answer-text">100000</span></p>
+
+        <img src="akti 9.png" alt="hasil percobaan aktivitas 9">
+
+    </div>
+
+    <div class="footer">SMKN 1 GARUT Dasar-Dasar PPLG JavaScript — Halaman 5</div>
+    <hr>
+
+    <!-- HALAMAN 6 & 7 -->
+    <h2>C. BAHAN AJAR</h2>
+    <h3>1. Mengingat Variable</h3>
+    <p>Variable adalah tempat untuk menyimpan data.</p>
+<pre>
+let nama = "Budi";
+let umur = 17;
+let nilai = 85;
+</pre>
+
+    <h3>2. Input - Process - Output</h3>
+    <div class="flowchart">
+        <div class="flow-box">INPUT</div>
+        <div class="arrow">↓</div>
+        <div class="flow-box">PROCESS</div>
+        <div class="arrow">↓</div>
+        <div class="flow-box">OUTPUT</div>
+    </div>
+
+    <h2>D. ASESMEN FORMATIF</h2>
+    <ul>
+        <li>Apa output dari <code>let a = 8; let b = 2; console.log(a + b);</code>?<br>
+        <strong>Jawaban:</strong> <span class="answer-text">10</span></li>
+        <br>
+        <li>Apa output dari <code>let a = 10; let b = 3; console.log(a % b);</code>?<br>
+        <strong>Jawaban:</strong> <span class="answer-text">1</span></li>
+        <br>
+        <li>Apa fungsi <code>prompt()</code>?<br>
+        <strong>Jawaban:</strong> <span class="answer-text">Untuk menampilkan dialog interaktif yang meminta masukan dari pengguna.</span></li>
+        <br>
+        <li>Buat program menghitung luas persegi panjang dengan panjang 10 dan lebar 5.<br>
+        <strong>Jawaban:</strong><br>
+<pre>
+let panjang = 10;
+let lebar = 5;
+let luas = panjang * lebar;
+console.log(luas);
+</pre>
+        </li>
+    </ul>
+
+    <div class="footer">SMKN 1 GARUT Dasar-Dasar PPLG JavaScript — Halaman 7</div>
+    <hr>
+
+    <!-- HALAMAN 8 & 9 -->
+    <h2>E. RUBRIK PENILAIAN</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Aspek</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Memahami input-output</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Penggunaan variable</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Penggunaan operator</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Penggunaan prompt()</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Ketepatan program</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Debugging</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Kemandirian</td><td></td><td></td><td></td><td>✓</td></tr>
+            <tr><td>Kreativitas</td><td></td><td></td><td></td><td>✓</td></tr>
+        </tbody>
+    </table>
+
+    <h2>F. REFLEKSI PEMBELAJARAN MENDALAM</h2>
+    <p><strong>Berkesadaran:</strong> Hari ini saya menyadari bahwa <span class="answer-text">ketelitian penulisan variabel sangat berpengaruh pada hasil jalannya program.</span></p>
+    <p><strong>Bermakna:</strong> Materi ini dapat digunakan untuk <span class="answer-text">membuat sistem kalkulator dan aplikasi transaksi kasir sederhana.</span></p>
+    <p><strong>Menggembirakan:</strong> Bagian pembelajaran yang paling saya sukai <span class="answer-text">saat berhasil memecahkan soal debugging dan membuat tantangan warung digital.</span></p>
+
+    <h2>G. EXIT TICKET</h2>
+    <ol>
+        <li>Satu hal yang sudah saya kuasai: <span class="answer-text">Menggunakan operator aritmatika dan fungsi prompt().</span></li>
+        <li>Satu hal yang masih membingungkan: <span class="answer-text">Konversi tipe data dari teks (string) menjadi angka (number).</span></li>
+        <li>Satu hal yang ingin saya coba: <span class="answer-text">Membuat kalkulator interaktif dengan JavaScript.</span></li>
+    </ol>
+
+    <div class="footer">SMKN 1 GARUT Dasar-Dasar PPLG JavaScript — Halaman 9</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
